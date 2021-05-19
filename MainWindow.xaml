@@ -1,0 +1,39 @@
+﻿<Window x:Class="Hairdresser_s.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hairdresser_s"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="563" Width="803">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File" Height="23" Width="45">
+                    <MenuItem Header="_Open" Click="MenuItemOpen_Click" />
+                    <MenuItem Header="_Save" Click="MenuItemSave_Click" />
+                    <ComboBox Name="ComboBox1" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"
+                              Width="174" Height="44" />
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
+        <Button Content="Add Barber Shop" HorizontalAlignment="Left" Margin="275,446,0,0" VerticalAlignment="Top"
+                Height="43" Width="128" Click="AddBarber_Click" />
+        <ListBox Name="HairstylesList" Margin="423,45,24,109" />
+        <ListBox Name="BarberShopList" Margin="11,46,400,108" SelectionChanged="BarberShopList_SelectionChanged" />
+        <Button Content="Edit Barber Shop" HorizontalAlignment="Left" Margin="143,446,0,0" VerticalAlignment="Top"
+                Height="42" Width="127" Click="EditBarber_Click" />
+        <Button Content="Add Hairstyle" HorizontalAlignment="Left" Margin="673,444,0,0" VerticalAlignment="Top"
+                Height="44" Width="106" Click="AddHairstyle_Click_2" />
+        <Label Content="Barber Shop" HorizontalAlignment="Left" Margin="11,19,0,0" VerticalAlignment="Top" Width="93" />
+        <Label Content="Hairstyles" HorizontalAlignment="Left" Margin="451,19,0,0" VerticalAlignment="Top" Width="93" />
+        <Button Content="Delete Barber Shop" HorizontalAlignment="Left" Margin="11,446,0,0" VerticalAlignment="Top"
+                Height="42" Width="127" Click="DeleteBarber_Click" />
+        <Button Content="Edit Hairstyle" HorizontalAlignment="Left" Margin="548,444,0,0" VerticalAlignment="Top"
+                Height="43" Width="106" Click="Edit_Hairstyle_Click" />
+        <Button Content="Delete Hairstyle" HorizontalAlignment="Left" Margin="423,445,0,0" VerticalAlignment="Top"
+                Height="43" Width="106" Click="DeleteHairstyle_Click_3" />
+
+    </Grid>
+</Window>
